@@ -2,7 +2,7 @@
 
 const builder = require('./builder')({
     assets: 'dist/assets',
-    views: 'dist/views',
+    views: 'dist',
     root: __dirname,
     server: {
         host: 'localhost',

@@ -1,8 +1,8 @@
 module.exports.routes = {
 
-    'GET /app*': {
+    'GET r|^(?!\/src|\/icons|\/fonts).*$|': {
         fn: function(request, response, next) {
-            response.sendfile(sails.config.appPath + '/dist/views/app/index.html');
+            response.sendfile(sails.config.appPath + '/dist/index.html');
         }
     }
 };
