@@ -1,0 +1,9 @@
+{
+    "application": {
+        "source": "application",
+        "destination": "",
+        "styles": {
+            "include": ["sass/main.scss"]
+        }
+    }
+}
