@@ -15,3 +15,14 @@ To execute the application you have two pre-defined scripts:
 
 ## Builder involved tasks
 TBD
+
+## Development process
+
+### Branches
+All branches must comply with the branches name pattern. They must have the following pattern
+
+`I-(Issue number)_(branch desired name)`
+
+As example a possible name for issue number 23
+
+`I-23_some-feature-development`
