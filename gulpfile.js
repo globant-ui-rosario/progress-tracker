@@ -11,8 +11,8 @@ const builder = require('./builder')({
         src: 'server.js',
         watch: [
             'server.js',
-            'server/api/*',
-            'server/config/*',
+            'api/*',
+            'config/*',
         ]
     }
 });
