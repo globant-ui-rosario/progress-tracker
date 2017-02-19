@@ -14,7 +14,7 @@ module.exports = function (id, application) {
     let cssDestinationFolder = applicationStyles.destination;
     let assetsFolder = config.assets;
     let rename = applicationStyles.rename;
-    let destination = path.join(assetsFolder, 'src', applicationDestinationFolder, cssDestinationFolder);
+    let destination = path.join(config.destination, applicationDestinationFolder, assetsFolder, cssDestinationFolder);
     let scssFiles = applicationStyles.include;
 
     return gulp.src(scssFiles.concat(builder.applications[id].scssFiles))
