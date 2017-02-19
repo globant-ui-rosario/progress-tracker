@@ -17,6 +17,7 @@
   "homepage": "https://github.com/globant-ui-rosario/progress-tracker#readme",
   "dependencies": {
     "axios": "^0.15.2",
+    "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
     "immutable": "^3.8.1",
     "keymirror": "^0.1.1",
