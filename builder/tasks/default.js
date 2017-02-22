@@ -1,6 +1,7 @@
 'use strict';
 
-// VENDOR LIBS
+const _ = require('lodash');
+const gulp = require('gulp');
 const runSequence = require('run-sequence');
 
 gulp.task('default', (cb) => {

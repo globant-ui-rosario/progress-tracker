@@ -1,5 +1,4 @@
-var rc = require('rc')
-var path = require('path');
+var rc = require('rc');
 
 process.chdir(__dirname);
 

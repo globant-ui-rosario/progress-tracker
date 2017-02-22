@@ -1,9 +1,8 @@
 'use strict';
 
-// VENDOR LIBS
 const notify = require('gulp-notify');
 
-module.exports = function (error) {
+module.exports = function () {
 
     if (!global.production) {
         let args = Array.prototype.slice.call(arguments);
@@ -15,7 +14,6 @@ module.exports = function (error) {
 
         this.emit('end');
     } else {
-        console.log(error);
         process.exit(1);
     }
 };

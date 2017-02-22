@@ -1,6 +1,6 @@
 'use strict';
 
-// VENDOR LIBS
+const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 
 gulp.task('server', () => {

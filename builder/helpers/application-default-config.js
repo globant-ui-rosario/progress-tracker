@@ -18,4 +18,4 @@ module.exports = {
         destination: 'assets/css',
         rename: 'styles.css'
     }
-}
+};

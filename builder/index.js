@@ -1,5 +1,9 @@
 'use strict';
 
+var _ = require('lodash');
+var glob = require('glob');
+var path = require('path');
+
 module.exports = function (config) {
     require('./env')(config);
 
