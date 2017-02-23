@@ -7,5 +7,5 @@ gulp.task('scss-lint', function () {
     return gulp.src(['**/*.scss', '!node_modules/**'])
         .pipe(sassLint())
         .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
+        .pipe(sassLint.failOnError());
 });
