@@ -1,6 +1,6 @@
 'use strict';
 
-const builder = require('./builder')({
+require('./builder')({
     assets: 'dist/assets',
     views: 'dist',
     root: __dirname,

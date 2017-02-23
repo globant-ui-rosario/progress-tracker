@@ -1,5 +1,8 @@
 'use strict';
 
+const gulp = require('gulp');
+const path = require('path');
+
 gulp.task('icons-build', function (cb) {
     let destination;
     let iconsPaths;

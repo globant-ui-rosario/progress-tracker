@@ -1,9 +1,10 @@
 'use strict';
 
-// VENDOR LIBS
 const browserSync = require('browser-sync');
+const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const handlebars = require('gulp-compile-handlebars');
+const path = require('path');
 
 module.exports = function (id, application) {
     let applicationScripts = application.scripts;

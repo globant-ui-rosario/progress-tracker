@@ -1,9 +1,10 @@
 'use strict';
 
-// VENDOR LIBS
+const _ = require('lodash');
+const gulp = require('gulp');
+const path = require('path');
 const runSequence = require('run-sequence');
 
-// BUILDER
 const applicationDefaultConfig = require('builder/helpers/application-default-config');
 const generateApplicationJsBundle = require('builder/generators/applications/js-bundle-generator');
 const HTMLBuild = require('builder/tasks/applications/html-build.js');
@@ -58,7 +59,7 @@ module.exports = function (application, id) {
 
             if (!env.isProductionBuild()) {
                 source = application.styles.include;
-                source = source.concat(applicationGlobalConfig.scssFiles)
+                source = source.concat(applicationGlobalConfig.scssFiles);
 
                 if (source.length) {
                     gulp.watch(source, [applicationScssBuildTask]);

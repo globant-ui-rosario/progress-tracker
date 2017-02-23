@@ -1,11 +1,12 @@
 'use strict';
 
-// VENDOR LIBS
 const browserSync = require('browser-sync');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-minify-css');
 const errorHandler = require('builder/helpers/error-handler');
 const gulpif = require('gulp-if');
+const gulp = require('gulp');
+const path = require('path');
 const sass = require('gulp-sass');
 
 module.exports = function (id, application) {

@@ -1,5 +1,8 @@
 'use strict';
 
+const gulp = require('gulp');
+const path = require('path');
+
 gulp.task('fonts-build', function (cb) {
     let destination;
     let fontsDestination = config.fonts.destination;
