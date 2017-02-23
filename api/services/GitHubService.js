@@ -17,10 +17,17 @@ module.exports ={
 			.then(function (res){
 				console.log(res.data);
 				//TODO: Write to DB
-				fs.writeFileSync('tst_token', res.data.access_token);
+				if (state = 'placeholder'){
+					fs.writeFileSync('tst_token', res.data.access_token);
+				} else {
+					throw new Error("State is different from the sent one.");
+				}
 				if(cb){
 					cb();
 				}
 			});
+	},
+	createMilestones: function (){
+
 	}
 };
