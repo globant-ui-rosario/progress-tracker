@@ -8,5 +8,10 @@ module.exports = {
 			code: req.param("code")
 		};
 		GitHubService.exchangeToken(options);
+	},
+	createMilestones: function (req, res) {
+		console.log(req.param("user"));
+		GitHubService.createMilestones(req.param("user"));
+		res.ok();
 	}
 };
