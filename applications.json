@@ -1,7 +1,15 @@
 {
-    "application": {
-        "source": "application",
-        "destination": "",
+    "course-sync": {
+        "source": "app-course-sync",
+        "destination": "course-sync",
+        "styles": {
+            "include": [
+                "styles/main.scss"
+            ]
+        }
+    },
+    "admin": {
+        "source": "app-admin",
         "styles": {
             "include": [
                 "styles/main.scss"

@@ -7,7 +7,7 @@ gulp.task('default', (cb) => {
     let applicationsBuild = _.map(builder.applications, (application) => {
         return application.buildTask;
     });
-    let buildTasks = ['icons-build', 'fonts-build'];
+    let buildTasks = ['js-common-build', 'icons-build', 'fonts-build'];
     let preBuildTasks = ['clean'];
     let stream;
 

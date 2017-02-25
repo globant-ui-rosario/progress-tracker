@@ -17,11 +17,13 @@ module.exports = function (id, application) {
     let stylesDestinationFolder = applicationStyles.destination;
     let scriptsRename = applicationScripts.rename;
     let stylesRename = applicationStyles.rename;
+    let vendors = config.vendors;
 
     source = path.join(source, htmlSource);
 
     return gulp.src(source)
         .pipe(handlebars({
+            vendorsPath: path.join('/', vendors.destination, vendors.rename),
             scriptsPath: path.join('/', destination, scriptsDestinationFolder, scriptsRename),
             stylesPath: path.join('/', destination, assetsFolder, stylesDestinationFolder, stylesRename)
         }))
