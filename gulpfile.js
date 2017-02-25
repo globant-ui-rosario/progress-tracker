@@ -14,5 +14,17 @@ const builder = require('./builder')({
             'api/*',
             'config/*',
         ]
+    },
+    vendors: {
+        libs: [
+            'axios',
+            'classnames',
+            'lodash',
+            'messageformat',
+            'moment',
+            'react',
+            'react-dom',
+            'react-router'
+        ]
     }
 });

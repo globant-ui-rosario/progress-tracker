@@ -6,6 +6,7 @@ module.exports = function (config) {
     // BUILDER
     const fontsDefaultConfig = require('builder/helpers/fonts-default-config');
     const iconsDefaultConfig = require('builder/helpers/icons-default-config');
+    const vendorsDefaultConfig = require('builder/helpers/vendors-default-config');
 
     // GENERATORS
     const applicationBuildGenerator = require('builder/generators/application-build-generator');
@@ -17,6 +18,7 @@ module.exports = function (config) {
         if (config.assets) {
             global.config.fonts = _.merge({}, fontsDefaultConfig, config.fonts);
             global.config.icons = _.merge({}, iconsDefaultConfig, config.icons);
+            global.config.vendors = _.merge({}, vendorsDefaultConfig, config.vendors);
 
             _.each(tasks, (task) => {require(task);});
             _.each(applications, applicationBuildGenerator);

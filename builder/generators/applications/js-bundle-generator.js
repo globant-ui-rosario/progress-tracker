@@ -67,5 +67,7 @@ module.exports = function (id, application) {
 
     bundler.transform(debowerify);
 
+    bundler.external(config.vendors.libs);
+
     return bundle();
 };
