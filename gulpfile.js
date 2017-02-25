@@ -1,8 +1,8 @@
 'use strict';
 
 const builder = require('./builder')({
-    assets: 'dist/assets',
-    views: 'dist',
+    destination: 'dist',
+    assets: 'assets',
     root: __dirname,
     server: {
         host: 'localhost',
