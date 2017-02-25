@@ -1,6 +1,6 @@
 module.exports.routes = {
 
-    'GET r|^(?!\/src|\/icons|\/fonts).*$|': {
+    'GET r|^(?!\/scripts|\/assets).*$|': {
         fn: function(request, response, next) {
             let url = request.url;
             let firstDashIndex = request.url.indexOf('/', 1);

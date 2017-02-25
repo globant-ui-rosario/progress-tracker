@@ -15,7 +15,7 @@ module.exports = {
     },
     styles: {
         include: [],
-        destination: 'assets/css',
+        destination: 'css',
         rename: 'styles.css'
     }
 }

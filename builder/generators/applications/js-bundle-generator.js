@@ -44,11 +44,10 @@ module.exports = function (id, application) {
 
     let bundle = function () {
         let stream = bundler.bundle();
-        let assetsFolder = config.assets;
         let applicationDestinationFolder = application.destination;
         let scriptsDestinationFolder = applicationScripts.destination;
         let fileDestinationName = applicationScripts.rename;
-        let destination = path.join(assetsFolder, 'src', applicationDestinationFolder, scriptsDestinationFolder);
+        let destination = path.join(config.destination, applicationDestinationFolder, scriptsDestinationFolder);
 
         util.log(`Bundling \'${util.colors.cyan(id)}\' application...`);
 

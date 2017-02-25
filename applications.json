@@ -3,7 +3,9 @@
         "source": "app-course-sync",
         "destination": "course-sync",
         "styles": {
-            "include": ["sass/main.scss"]
+            "include": [
+                "styles/main.scss"
+            ]
         }
     }
 }
