@@ -2,10 +2,4 @@
 
 @include normalize();
 
-@import 'node_modules/foundation-sites/scss/util/util';
-@import 'node_modules/foundation-sites/scss/foundation';
-@import 'styles/partials/_foundation-settings';
-
-.best-button {
-    @include button();
-}
+@import 'styles/partials/grid';
