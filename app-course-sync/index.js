@@ -1,6 +1,5 @@
-import AppRouter from 'app-course-sync/AppRouter';
-import routes from 'app-course-sync/routes';
+import app from 'app-course-sync/app';
 
-const router = new AppRouter(routes);
+import studentSignUpCommand from 'app-course-sync/stores/commands/studentSignUpCommand';
 
-router.run();
+studentSignUpCommand();
