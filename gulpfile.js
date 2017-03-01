@@ -19,6 +19,7 @@ const builder = require('./builder')({
         libs: [
             'axios',
             'classnames',
+            'flux',
             'lodash',
             'messageformat',
             'moment',
